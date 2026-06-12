@@ -1,0 +1,8 @@
+.DS_Store
+.claude/
+*.docx
+*.pdf
+*.jpeg
+design*.md
+freechoice-build-prompt.md
+multivitamin-optimum-wireframe.html
