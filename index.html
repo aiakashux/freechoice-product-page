@@ -969,7 +969,7 @@ body.menu-open{overflow:hidden}
 }
 .active-design::before{
   content:"";position:absolute;inset:0;z-index:-2;
-  background:url("assets/active-by-design.png") center/cover no-repeat;
+  background:url("assets/active-by-design.webp") center/cover no-repeat;
 }
 .active-design::after{
   content:"";position:absolute;inset:0;z-index:-1;
@@ -1358,7 +1358,14 @@ html[data-sticky-variant="pill"] .sticky-buy .btn{
   .icon-list{gap:2px}
   .hero-grid{flex-direction:column;gap:32px}
   .hero-grid .buy{flex:1 1 100%;width:100%}
-  .gallery{position:static}
+  .gallery{position:static;width:100%;max-width:100%;min-width:0}
+  .gallery-main{width:100%;aspect-ratio:1}
+  .gallery-thumbs{
+    width:100%;justify-content:flex-start;
+    overflow-x:auto;scrollbar-width:none;
+    overscroll-behavior-inline:contain;
+  }
+  .gallery-thumbs::-webkit-scrollbar{display:none}
   .value{padding:80px 0}
   .value .section-head{margin-bottom:48px}
   .value-grid{
@@ -2157,7 +2164,7 @@ main>section:first-child{
       <article class="footer-feature">
         <h2>The Free Choice For Your Health.</h2>
         <div class="footer-feature-media">
-          <img src="assets/footer-product.png" alt="A hand holding FreeChoice Vitamine C-1000" />
+          <img src="assets/footer-product.webp" alt="A hand holding FreeChoice Vitamine C-1000" />
         </div>
       </article>
 
